@@ -6,7 +6,7 @@ export default function Cart() {
   return (
     <div>
       {cart.length > 0 && cart.map((item) => (
-        <li key={item.id}>{item.name}</li>
+        <li key={item.id}>{item.name}-{item.price}-<button>-</button>{item.quantity}-<button>+</button>-{item.price*item.quantity}</li>
       ))}
     </div>
   );
